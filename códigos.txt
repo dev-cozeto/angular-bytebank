@@ -1,0 +1,26 @@
+[Angular](https://www.notion.so/Angular-c45d40d6c23a43e398cbb695963c38eb)
+https://angular.io/cli → Comandos para poder rodar o angular na máquina 
+https://angular.io/api/common/DatePipe → Documentação para conferir outros formatos de horário. 
+[https://github.com/typicode/json-server](https://github.com/typicode/json-server) → link com os comandos do json server
+CMD- ng server
+
+Install JSON Server
+
+npm install -g json-server
+Create a db.json file with some data
+
+{
+  "posts": [
+    { "id": 1, "title": "json-server", "author": "typicode" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 }
+  ],
+  "profile": { "name": "typicode" }
+}
+Start JSON Server
+
+json-server --watch db.json
+Now if you go to http://localhost:3000/posts/1, you'll get
+
+{ "id": 1, "title": "json-server", "author": "typicode" }
